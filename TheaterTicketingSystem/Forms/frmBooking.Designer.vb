@@ -136,7 +136,6 @@ Partial Class frmBooking
         ' numQuantity
         ' 
         numQuantity.Location = New Point(460, 124)
-        numQuantity.Maximum = New Decimal(New Integer() {999999, 0, 0, 0})
         numQuantity.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         numQuantity.Name = "numQuantity"
         numQuantity.Size = New Size(150, 27)

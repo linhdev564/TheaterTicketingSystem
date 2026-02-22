@@ -21,7 +21,7 @@ Public Class PerformanceService
 
             If Not String.IsNullOrEmpty(keyword) Then
                 keyword = keyword.Trim()
-                query = query.Where(Function(p) EF.Functions.ILike(p.Name, $"%{keyword}%"))
+                query = query.Where(Function(p) p.Name.Contains(keyword))
             End If
 
             If fromDate.HasValue Then

@@ -191,6 +191,7 @@ Partial Class frmPerformanceMaster
         numDuration.Name = "numDuration"
         numDuration.Size = New Size(79, 27)
         numDuration.TabIndex = 5
+        numDuration.Value = New Decimal(New Integer() {120, 0, 0, 0})
         ' 
         ' dtpStartTime
         ' 

@@ -76,6 +76,9 @@ Public Class frmPerformanceMaster
 
     Private Sub LoadData()
         Dim searchDate = GetNullableDateValue(dtpSearchDate)
+        If searchDate.HasValue Then
+            searchDate = searchDate.Value.Date
+        End If
 
         Dim pageSize = CInt(cboPageSize.SelectedItem)
         Dim pageIndex = CInt(cboPageNumber.SelectedItem)
