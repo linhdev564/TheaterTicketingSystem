@@ -206,7 +206,6 @@ Public Class frmSeatAssignment
 
             Dim seats = SeatAssignmentService.GetInstance.GetAssignedSeatsForBooking(booking.Id)
 
-            ' xóa
             booking.IsDeleted = True
             BookingService.GetInstance.Update(booking)
 
@@ -219,7 +218,6 @@ Public Class frmSeatAssignment
 
             MessageBox.Show("Đã hủy booking và trả ghế thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-            ' Tải lại danh sách booking và cập nhật sơ đồ ghế
             LoadBookings()
             RefreshSeatMap()
         Catch ex As Exception
